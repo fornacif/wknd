@@ -2,5 +2,10 @@
  * @param {HTMLElement} $block
  */
 export default function decorate(block) {
-	block.innerHTML = '<div class="customTest">test title</div>';
+	const subDiv = document.createElement('button');
+	subDiv.textContent = 'Button';
+	subDiv.addEventListener('click', (e) => {
+		console.info("sd");
+	});
+	block.appendChild(subDiv);
 }	
