@@ -7,5 +7,23 @@ export default function decorate(block) {
 	subDiv.addEventListener('click', (e) => {
 		console.info("sd");
 	});
+
+	const sleep = async (milliseconds) => {
+    await new Promise(resolve => {
+        return setTimeout(resolve, milliseconds)
+	    });
+	};
+
+	const testSleep = async () => {
+	    console.log('Step 1 - Called');
+	    await sleep(5000);
+	    console.log('Step 2 - Called');
+	}
+
+	testSleep();
 	block.appendChild(subDiv);
 }	
+
+
+
+
