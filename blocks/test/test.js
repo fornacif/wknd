@@ -17,7 +17,9 @@ export default function decorate(block) {
 	const testSleep = async () => {
 	    console.log('Step 1 - Called');
 	    await sleep(5000);
-	    block.appendChild(subDiv);	}
+	    block.appendChild(subDiv);	
+	    console.log('Step 2 - Called');
+	}
 
 	testSleep();
 	
