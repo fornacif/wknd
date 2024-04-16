@@ -31,6 +31,16 @@
       "passConfig": true,
       "environments": ["preview","live", "edit"],
       "includePaths": ["**.docx**"]
+    },
+    {
+      "id": "accessibility-mode",
+      "title": "Accessibility Mode",
+      "environments": [
+        "preview",
+        "dev",
+        "live"
+      ],
+      "event": "accessibility-mode"
     }
   ]
 }
